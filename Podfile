@@ -1,6 +1,6 @@
-platform :ios, '13.0'
+platform :ios, '14.0'
 
-abstract_target 'novawalletAll' do
+abstract_target 'edgeversewalletAll' do
   use_frameworks!
 
   pod 'SubstrateSdk', :git => 'https://github.com/nova-wallet/substrate-sdk-ios.git', :tag => '1.1.0'
@@ -18,11 +18,11 @@ abstract_target 'novawalletAll' do
   pod 'Sourcery', '~> 1.4'
   pod 'Kingfisher', :inhibit_warnings => true
   pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :tag => '3.0.0'
-  pod 'Charts'
+  pod 'Charts', '~> 4.1.0'
   pod 'SwiftRLP', :git => 'https://github.com/ERussel/SwiftRLP.git'
   pod 'Starscream', :git => 'https://github.com/ERussel/Starscream.git', :tag => '4.0.5'
 
-  target 'novawalletTests' do
+  target 'edgeversewalletTests' do
     inherit! :search_paths
 
     pod 'Cuckoo'
@@ -38,9 +38,9 @@ abstract_target 'novawalletAll' do
 
   end
 
-  target 'novawalletIntegrationTests'
+  target 'edgeversewalletIntegrationTests'
 
-  target 'novawallet'
+  target 'edgeversewallet'
 
 end
 

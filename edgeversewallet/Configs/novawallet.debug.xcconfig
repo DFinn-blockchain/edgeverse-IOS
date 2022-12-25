@@ -1,0 +1,5 @@
+#include "../../Pods/Target Support Files/Pods-edgeversewalletAll-edgeversewallet/Pods-edgeversewalletAll-edgeversewallet.debug.xcconfig"
+
+OTHER_SWIFT_FLAGS = $(inherited) "-DENABLE_UITUNNEL" "-DF_DEV"
+
+APP_NAME = Edgeverse Dev

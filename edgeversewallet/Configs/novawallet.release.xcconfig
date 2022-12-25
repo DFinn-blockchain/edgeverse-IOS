@@ -1,0 +1,5 @@
+#include "../../Pods/Target Support Files/Pods-edgeverseAll-edgeversewallet/Pods-edgeversewalletAll-edgeversewallet.release.xcconfig"
+
+OTHER_SWIFT_FLAGS = $(inherited) "-DF_RELEASE"
+
+APP_NAME = Edgeverse
